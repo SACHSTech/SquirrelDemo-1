@@ -6,7 +6,7 @@ public class Squirrel{
     String sizeString;
     int nutCountInt;
     Boolean aliveBoolean;
-    Boolean iqDouble;
+    double iqDouble;
 
     // constructor
     /**
@@ -17,7 +17,7 @@ public class Squirrel{
      * @param newNutCountInt
      * @param newiqDouble
      */
-    public Squirrel(String newColourString, String newSizeString, int newInt, int newNutCountInt, boolean newiqDouble) {
+    public Squirrel(String newColourString, String newSizeString, int newNutCountInt, double newiqDouble) {
         this.aliveBoolean = true;
         this.colourString = newColourString;
         this.sizeString = newSizeString;
@@ -44,5 +44,9 @@ public class Squirrel{
 
     public void kill(){
         this.aliveBoolean = false;
+    }
+
+    public void eatNut(){
+        
     }
 }
